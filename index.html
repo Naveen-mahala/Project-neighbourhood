@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeighborFit - Find Your Ideal Neighborhood</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container py-5">
+    <h1 class="mb-4 text-center">NeighborFit</h1>
+    <p class="lead text-center mb-5">Find neighborhoods that match your lifestyle!</p>
+    <form id="preferencesForm" class="card p-4 shadow-sm mb-4">
+      <div class="mb-3">
+        <label for="commute" class="form-label">Commute Time (minutes)</label>
+        <input type="number" class="form-control" id="commute" name="commute" min="0" max="120" value="30" required>
+      </div>
+      <div class="mb-3">
+        <label for="crime" class="form-label">Crime Rate Preference</label>
+        <select class="form-select" id="crime" name="crime" required>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="green" class="form-label">Green Spaces</label>
+        <select class="form-select" id="green" name="green" required>
+          <option value="high">High</option>
+          <option value="medium">Medium</option>
+          <option value="low">Low</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="cost" class="form-label">Cost of Living</label>
+        <select class="form-select" id="cost" name="cost" required>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="internet" class="form-label">Internet Access</label>
+        <select class="form-select" id="internet" name="internet" required>
+          <option value="high">High Speed</option>
+          <option value="medium">Medium</option>
+          <option value="low">Basic</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Find My Neighborhood</button>
+    </form>
+    <div id="results" class="card p-4 shadow-sm d-none">
+      <h2 class="mb-3">Top Matches</h2>
+      <div id="resultsList"></div>
+      <button class="btn btn-link mt-3" id="backBtn">Back to Form</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

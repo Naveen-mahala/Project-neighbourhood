@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Greenfield",
+    "commute": 25,
+    "crime": "low",
+    "green": "high",
+    "cost": "medium",
+    "internet": "high"
+  },
+  {
+    "name": "Downtown",
+    "commute": 15,
+    "crime": "medium",
+    "green": "low",
+    "cost": "high",
+    "internet": "high"
+  },
+  {
+    "name": "Lakeside",
+    "commute": 40,
+    "crime": "low",
+    "green": "high",
+    "cost": "medium",
+    "internet": "medium"
+  },
+  {
+    "name": "Sunnyvale",
+    "commute": 35,
+    "crime": "medium",
+    "green": "medium",
+    "cost": "low",
+    "internet": "medium"
+  },
+  {
+    "name": "Tech Park",
+    "commute": 20,
+    "crime": "high",
+    "green": "low",
+    "cost": "medium",
+    "internet": "high"
+  },
+  {
+    "name": "Suburbia",
+    "commute": 50,
+    "crime": "low",
+    "green": "medium",
+    "cost": "low",
+    "internet": "low"
+  }
+] 
